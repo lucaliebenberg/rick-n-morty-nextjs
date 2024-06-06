@@ -17,16 +17,17 @@ export default async function LocationsPage() {
   console.log('characters --> ', locations)
 
   return (
-    <div className={"h-full"}>
-      <div className={""}>
+    <div className={"h-full text-white"}>
+      <div className={"mt-20"}>
         <Table>
-          <TableCaption>A list of all the Rick n Morty locations!</TableCaption>
+          <TableCaption className={"text-white text-[1.1rem] mt-5"}>A list of all the Rick n Morty
+            locations!</TableCaption>
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[100px]">ID</TableHead>
-              <TableHead>Name</TableHead>
-              <TableHead>Type</TableHead>
-              <TableHead className="text-right">Created</TableHead>
+              <TableHead className="w-[100px] text-white">ID</TableHead>
+              <TableHead className={"text-white"}>Name</TableHead>
+              <TableHead className={"text-white"}>Type</TableHead>
+              <TableHead className="text-right text-white">Created</TableHead>
             </TableRow>
           </TableHeader>
           {locations.map((item: any) => (
